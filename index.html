@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>
+      Frontend Mentor | Huddle landing page with alternating feature blocks
+    </title>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+      :root {
+        --branco: #ebfbff;
+        --rosa: #ff52bf;
+        --escuro: #00252e;
+        --cinza: #808d99;
+      }
+
+      body {
+        font-size: 18px;
+      }
+      .navbar {
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem 2rem;
+        margin: 0px 80px;
+        background-color: var(--branco);
+      }
+      .navbar ul {
+        list-style: none;
+      }
+      .navbar img {
+        width: 200px;
+      }
+      .navbar ul li {
+        font-size: 1.2rem;
+        color: var(--escuro);
+        cursor: pointer;
+      }
+      .principal {
+        font-family: "Poppins", sans-serif;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem 4rem;
+        background-color: var(--branco);
+      }
+      .principal-texto {
+        max-width: 600px;
+      }
+      .principal-texto h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+      }
+      .principal-texto p {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+      }
+      .principal-texto button {
+        padding: 1rem 2rem;
+        background-color: #ff52bf;
+        color: var(--branco);
+        border: none;
+        border-radius: 50px;
+        font-size: 1.2rem;
+        cursor: pointer;
+      }
+      .principal img {
+        max-width: 100%;
+      }
+
+      .caracteristicas {
+        display: flex;
+        justify-content: center;
+      }
+
+      .caracteristicas-2 {
+        display: flex;
+        justify-content: center;
+      }
+
+      h2 {
+        color: var(--escuro);
+      }
+      .caracteristica-texto,
+      h2 p {
+        font-family: "Poppins", sans-serif;
+        font-size: 1.2rem;
+        margin-left: 10rem;
+        margin-top: 6rem;
+        margin-bottom: 1rem;
+        margin-right: 15rem;
+        color: var(--cinza);
+      }
+
+      .caracteristica-texto-2,
+      h2 p {
+        font-family: "Poppins", sans-serif;
+        font-size: 1.2rem;
+        margin-left: 10rem;
+        margin-top: 6rem;
+        margin-bottom: 1rem;
+        margin-right: 15rem;
+        color: var(--cinza);
+      }
+
+      .caracteristicas img {
+        width: 30%;
+        margin-right: 13rem;
+      }
+
+      .caracteristicas-2 img {
+        width: 30%;
+        margin-left: 13rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <img src="/images/logo.svg" alt="" />
+        <ul>
+          <li>Try it Free</li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="principal">
+        <div class="principal-texto">
+          <h1>Build The Community Your Fans Will Love</h1>
+          <p>
+            Huddle re-imagines the way we build communities. You have a voice,
+            but so does your audience. Create connections with your users as you
+            engage in genuine discussion.
+          </p>
+          <button>Get Started For Free</button>
+        </div>
+        <img src="./images/illustration-mockups.svg" alt="" />
+      </section>
+
+      <section class="caracteristicas">
+        <div class="caracteristica-texto">
+          <h2>Grow Together</h2>
+          <p>
+            Generate meaningful discussions with your audience and build a
+            strong, loyal community. Think of the insightful conversations you
+            miss out on with a feedback form..
+          </p>
+        </div>
+        <img src="./images/illustration-grow-together.svg" alt="" />
+      </section>
+
+      <section class="caracteristicas-2">
+        <img src="./images/illustration-flowing-conversation.svg" alt="" />
+        <div class="caracteristica-texto-2">
+          <h2>Grow Together</h2>
+          <p>
+            Generate meaningful discussions with your audience and build a
+            strong, loyal community. Think of the insightful conversations you
+            miss out on with a feedback form..
+          </p>
+        </div>
+      </section>
+
+      <section class="caracteristicas">
+        <div class="caracteristica-texto">
+          <h2>Grow Together</h2>
+          <p>
+            Generate meaningful discussions with your audience and build a
+            strong, loyal community. Think of the insightful conversations you
+            miss out on with a feedback form..
+          </p>
+        </div>
+        <img src="./images/illustration-your-users.svg" alt="" />
+      </section>
+
+      <!-- Footer -->
+    </main>
+
+    Build The Community Your Fans Will Love Huddle re-imagines the way we build
+    communities. You have a voice, but so does your audience. Create connections
+    with your users as you engage in genuine discussion. Get Started For Free
+    Grow Together Flowing Conversations You wouldn't paginate a conversation in
+    real life, so why do it online? Our threads have just-in-time loading for a
+    more natural flow. Your Users It takes no time at all to integrate Huddle
+    with your app's authentication solution. This means, once signed in to your
+    app, your users can start chatting immediately. Ready To Build Your
+    Community? Get Started For Free Lorem ipsum dolor sit amet, consectetur
+    adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+    aliqua +1-543-123-4567 example@huddle.com About Us What We Do FAQ Career
+    Blog Contact Us &copy; Copyright 2018 Huddle. All rights reserved.
+  </body>
+</html>
