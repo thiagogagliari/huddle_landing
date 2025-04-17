@@ -15,6 +15,10 @@
     <title>
       Frontend Mentor | Huddle landing page with alternating feature blocks
     </title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
 
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
@@ -28,6 +32,7 @@
 
       body {
         font-size: 18px;
+        font-family: "Poppins", sans-serif;
       }
       .navbar {
         font-family: "Poppins", sans-serif;
@@ -126,6 +131,112 @@
         width: 30%;
         margin-left: 13rem;
       }
+
+      .cta-box {
+        background: white;
+        text-align: center;
+        padding: 40px 20px;
+        border-radius: 15px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+        max-width: 600px;
+        margin: 0 auto;
+        position: relative;
+        top: 60px; /* Eleva a caixa sobre o footer */
+        z-index: 10;
+      }
+
+      .cta-box h2 {
+        margin-bottom: 20px;
+        color: #1a1a1a;
+      }
+
+      .cta-btn {
+        background-color: #ff52bf;
+        color: white;
+        padding: 15px 30px;
+        border-radius: 30px;
+        text-decoration: none;
+        font-weight: bold;
+        box-shadow: 0 5px 15px rgba(255, 82, 191, 0.4);
+      }
+
+      .footer {
+        background-color: #00252e;
+        color: white;
+        padding: 60px 20px 30px;
+      }
+
+      .footer-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .footer-left,
+      .footer-middle,
+      .footer-right {
+        margin: 20px 0;
+      }
+
+      .footer-left {
+        max-width: 300px;
+      }
+
+      .footer-left h2 {
+        color: var(--branco);
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+
+      .footer-left p {
+        margin: 8px 0;
+      }
+
+      .footer-middle {
+        display: flex;
+        gap: 40px;
+      }
+
+      .footer-middle ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      .footer-middle ul li {
+        margin-bottom: 10px;
+      }
+
+      .footer-middle ul li a {
+        color: white;
+        text-decoration: none;
+      }
+
+      .footer-middle ul li a:hover {
+        text-decoration: underline;
+      }
+
+      .footer-right a {
+        color: white;
+        margin-right: 15px;
+        font-size: 20px;
+      }
+
+      .footer-right a:hover {
+        color: #ff52bf;
+      }
+
+      .footer i {
+        margin-right: 10px;
+      }
+
+      .copyright {
+        text-align: right;
+        margin-top: 30px;
+        font-size: 14px;
+        color: #ccc;
+      }
     </style>
   </head>
   <body>
@@ -187,21 +298,48 @@
         </div>
         <img src="./images/illustration-your-users.svg" alt="" />
       </section>
-
-      <!-- Footer -->
     </main>
 
-    Build The Community Your Fans Will Love Huddle re-imagines the way we build
-    communities. You have a voice, but so does your audience. Create connections
-    with your users as you engage in genuine discussion. Get Started For Free
-    Grow Together Flowing Conversations You wouldn't paginate a conversation in
-    real life, so why do it online? Our threads have just-in-time loading for a
-    more natural flow. Your Users It takes no time at all to integrate Huddle
-    with your app's authentication solution. This means, once signed in to your
-    app, your users can start chatting immediately. Ready To Build Your
-    Community? Get Started For Free Lorem ipsum dolor sit amet, consectetur
-    adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-    aliqua +1-543-123-4567 example@huddle.com About Us What We Do FAQ Career
-    Blog Contact Us &copy; Copyright 2018 Huddle. All rights reserved.
+    <!-- Call to Action -->
+    <div class="cta-box">
+      <h2>Ready To Build Your Community?</h2>
+      <a href="#" class="cta-btn">Get Started For Free</a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-left">
+          <h2><i class="fas fa-comment-dots"></i>Huddle</h2>
+          <p>
+            <i class="fa-solid fa-location-dot"></i>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua
+          </p>
+          <p><i class="fas fa-phone"></i> +1-543-123-4567</p>
+          <p><i class="fas fa-envelope"></i> example@huddle.com</p>
+        </div>
+
+        <div class="footer-middle">
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">What We Do</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">Career</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-right">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <p class="copyright">© Copyright 2018 Huddle. All rights reserved.</p>
+    </footer>
   </body>
 </html>
